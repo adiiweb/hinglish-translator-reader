@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hinglish Translator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🇮🇳 Hinglish Reader</h1>
+      <p class="subtitle">Translate & Read any webpage</p>
+    </header>
+
+    <div class="status" id="status">
+      <span class="dot" id="status-dot"></span>
+      <span id="status-text">Ready</span>
+    </div>
+
+    <div class="controls">
+      <button id="btn-translate" class="btn primary">
+        <span class="icon">🔄</span> Translate Page
+      </button>
+      <button id="btn-read" class="btn secondary">
+        <span class="icon">🔊</span> Read Aloud
+      </button>
+      <button id="btn-stop" class="btn danger">
+        <span class="icon">⏹️</span> Stop
+      </button>
+      <button id="btn-restore" class="btn">
+        <span class="icon">↩️</span> Restore Original
+      </button>
+    </div>
+
+    <!-- Voice & Speed Settings -->
+    <div class="settings-panel">
+      <div class="setting-row">
+        <label for="voice-select">🎙️ Voice</label>
+        <select id="voice-select">
+          <option value="">Default Voice</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <label for="rate-slider">⚡ Speed: <span id="rate-value">1.0x</span></label>
+        <input type="range" id="rate-slider" min="0.5" max="1.5" step="0.1" value="1.0">
+      </div>
+
+      <div class="setting-row">
+        <label for="pitch-slider">🎵 Pitch: <span id="pitch-value">1.0</span></label>
+        <input type="range" id="pitch-slider" min="0.5" max="1.5" step="0.1" value="1.0">
+      </div>
+    </div>
+
+    <div class="info">
+      <p>💡 <strong>Tip:</strong> Click on any text after translation to start reading from that point.</p>
+      <p>🎙️ <strong>Best Voices:</strong> Google हिन्दी, Microsoft Swara — natural & rounded.</p>
+    </div>
+
+    <footer>
+      <small>v1.1.0 • Custom Voice + Speed Control</small>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

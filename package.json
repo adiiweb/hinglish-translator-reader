@@ -1,0 +1,25 @@
+{
+  "name": "hinglish-translator-reader",
+  "version": "1.1.1",
+  "description": "Firefox extension to translate webpages to Hinglish and read aloud",
+  "scripts": {
+    "lint": "web-ext lint",
+    "build": "web-ext build",
+    "run": "web-ext run"
+  },
+  "devDependencies": {
+    "web-ext": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/hinglish-translator-reader.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "firefox-extension",
+    "hinglish",
+    "translation",
+    "text-to-speech",
+    "accessibility"
+  ]
+}
